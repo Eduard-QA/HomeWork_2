@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Login_2" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-12-17T21:29:19" hostname="LAPTOP-RQGMKM65" time="0.839">
+<testsuite name="Login_2" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-12-18T20:24:36" hostname="LAPTOP-RQGMKM65" time="2.593">
   <properties/>
-  <testcase name="registrSaccess" classname="Login_2" time="0.839"/>
+  <testcase name="registrIlcaro" classname="Login_2" time="2.593"/>
   <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[Starting ChromeDriver 108.0.5359.71 (1e0e3868ee06e91ad636a874420e3ca3ae3756ac-refs/branch-heads/5359@{#1016}) on port 17480
+  <system-err><![CDATA[Starting ChromeDriver 108.0.5359.71 (1e0e3868ee06e91ad636a874420e3ca3ae3756ac-refs/branch-heads/5359@{#1016}) on port 25053
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
