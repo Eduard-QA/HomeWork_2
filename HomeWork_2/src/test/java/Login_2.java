@@ -32,7 +32,7 @@ WebDriver wd;
 
     }
     @Test
-    public void loginSuccess (){
+    public void loginSuccess () throws InterruptedException {
     wd.get("https://telranedu.web.app/home");
     WebElement itemLogin = wd.findElement(By.linkText("LOGIN"));
     itemLogin.click();
@@ -46,7 +46,11 @@ WebDriver wd;
     password.sendKeys("Remember123@");
     WebElement button = wd.findElement(By.name("login"));
     button.click();
-    wd.quit();
+        Thread.sleep(2000);
+        WebElement bar1 = wd.findElement(By.cssSelector(".navbar-logged_nav__2Hx7M"));
+        wd.findElement(By.cssSelector("body button")).click();
+
+   // wd.quit();
     }
     @Test
     public void registrIlcaro (){
@@ -56,22 +60,23 @@ WebDriver wd;
     WebElement name = wd.findElement(By.id("name"));
     name.click();
     name.clear();
-    name.sendKeys("Dov");
+    name.sendKeys("Dov1");
     WebElement lastname = wd.findElement(By.id("lastName"));
     lastname.click();
     lastname.clear();
-    lastname.sendKeys("Pooh");
+    lastname.sendKeys("Pooh1");
     WebElement email = wd.findElement(By.id("email"));
     email.click();
     email.clear();
-    email.sendKeys("rehovot1@mail.ru");
+    email.sendKeys("rehovot2@mail.ru");
     WebElement password = wd.findElement(By.id("password"));
     password.click();
     password.clear();
-    password.sendKeys("Remember123@");
+    password.sendKeys("Remember1234@");
     WebElement chek = wd.findElement(By.className("checkbox-container"));
     chek.click();
-        wd.quit();
+    wd.findElement(By.cssSelector("button[type = 'submit']")).click();
+       // wd.quit();
 
 
     }
