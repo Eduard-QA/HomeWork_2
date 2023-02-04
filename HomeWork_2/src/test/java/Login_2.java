@@ -54,7 +54,7 @@ WebDriver wd;
     }
     @Test
     public void registrIlcaro (){
-    wd.get("https://ilcarro-1578153671498.web.app/search");
+    wd.get("https://ilcarro.web.app/search");
     WebElement singup = wd.findElement(By.partialLinkText("Sign"));
     singup.click();
     WebElement name = wd.findElement(By.id("name"));
@@ -73,6 +73,7 @@ WebDriver wd;
     password.click();
     password.clear();
     password.sendKeys("Remember1234@");
+   // wd.manage().window().maximize()
     WebElement chek = wd.findElement(By.className("checkbox-container"));
     chek.click();
     wd.findElement(By.cssSelector("button[type = 'submit']")).click();
